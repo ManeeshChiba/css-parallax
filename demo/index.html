@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Test Document</title>
-    <link rel="stylesheet" href="/css/ssparallax.css">
+    <title>Parallax Demo</title>
+    <link rel="stylesheet" href="../dist/css/ssparallax.min.css">
     <style>
         body {
             height: 500vh;
         }
         .test-block {
-            width: 100px;
+            width: calc(2vw - (16px / 50));
             height: 100px;
             background: skyblue;
             float: left;
@@ -25,31 +25,79 @@
             left: 0;
             width: 100%;
         }
+        .image-example {
+            width: 100%;
+            height: 50vh;
+            position: absolute;
+            left: 0;
+            background-size: cover;
+            
+        }
+        .one {
+            top: 200vh;
+            background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1057&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+            background-attachment: fixed;
+        }
+        .two {
+            top: 250vh;
+            background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=1051&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="test-block" data-ssparallax="1"></div>
         <div class="test-block" data-ssparallax="2"></div>
-        <div class="test-block" data-ssparallax="3"></div>
         <div class="test-block" data-ssparallax="4"></div>
-        <div class="test-block" data-ssparallax="5"></div>
         <div class="test-block" data-ssparallax="6"></div>
-        <div class="test-block" data-ssparallax="7"></div>
         <div class="test-block" data-ssparallax="8"></div>
-        <div class="test-block" data-ssparallax="9"></div>
         <div class="test-block" data-ssparallax="10"></div>
+        <div class="test-block" data-ssparallax="12"></div>
+        <div class="test-block" data-ssparallax="14"></div>
+        <div class="test-block" data-ssparallax="16"></div>
+        <div class="test-block" data-ssparallax="18"></div>
         <div class="test-block" data-ssparallax="20"></div>
+        <div class="test-block" data-ssparallax="22"></div>
+        <div class="test-block" data-ssparallax="24"></div>
+        <div class="test-block" data-ssparallax="26"></div>
+        <div class="test-block" data-ssparallax="28"></div>
         <div class="test-block" data-ssparallax="30"></div>
+        <div class="test-block" data-ssparallax="32"></div>
+        <div class="test-block" data-ssparallax="34"></div>
+        <div class="test-block" data-ssparallax="36"></div>
+        <div class="test-block" data-ssparallax="38"></div>
         <div class="test-block" data-ssparallax="40"></div>
+        <div class="test-block" data-ssparallax="42"></div>
+        <div class="test-block" data-ssparallax="44"></div>
+        <div class="test-block" data-ssparallax="46"></div>
+        <div class="test-block" data-ssparallax="48"></div>
         <div class="test-block" data-ssparallax="50"></div>
+        <div class="test-block" data-ssparallax="52"></div>
+        <div class="test-block" data-ssparallax="54"></div>
+        <div class="test-block" data-ssparallax="56"></div>
+        <div class="test-block" data-ssparallax="58"></div>
         <div class="test-block" data-ssparallax="60"></div>
+        <div class="test-block" data-ssparallax="62"></div>
+        <div class="test-block" data-ssparallax="64"></div>
+        <div class="test-block" data-ssparallax="66"></div>
+        <div class="test-block" data-ssparallax="68"></div>
         <div class="test-block" data-ssparallax="70"></div>
+        <div class="test-block" data-ssparallax="72"></div>
+        <div class="test-block" data-ssparallax="74"></div>
+        <div class="test-block" data-ssparallax="76"></div>
+        <div class="test-block" data-ssparallax="78"></div>
         <div class="test-block" data-ssparallax="80"></div>
+        <div class="test-block" data-ssparallax="82"></div>
+        <div class="test-block" data-ssparallax="84"></div>
+        <div class="test-block" data-ssparallax="86"></div>
+        <div class="test-block" data-ssparallax="88"></div>
         <div class="test-block" data-ssparallax="90"></div>
+        <div class="test-block" data-ssparallax="92"></div>
+        <div class="test-block" data-ssparallax="94"></div>
+        <div class="test-block" data-ssparallax="96"></div>
+        <div class="test-block" data-ssparallax="98"></div>
         <div class="test-block" data-ssparallax="100"></div>
     </div>
-    <script src="/js/ssparallax.js"></script>
+    <script src="../dist/js/ssparallax.min.js"></script>
     <script>
         window.onload = function(){
             var parallax = new ssparallax;
