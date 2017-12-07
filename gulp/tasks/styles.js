@@ -20,6 +20,7 @@ gulp.task('styles', function () {
     .pipe(autoprefixer({
         browsers: ['last 2 versions', '> 1%', 'ie 9', 'ie 10']
     }))
+    .pipe( gulp.dest(global.destination + '/css'))
     .pipe(gulpif(global.destination != 'dev', rename({suffix: '.min'})))
     .pipe( gulp.dest(global.destination + '/css'));
 });
