@@ -4,9 +4,8 @@
   "description": "A super simple parallax plugin",
   "main": "readme.md",
   "scripts": {
-    "start": "npm install && gulp dev",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm prod"
+    "prestart": "npm intall",
+    "start": "gulp dev"
   },
   "repository": {
     "type": "git",
