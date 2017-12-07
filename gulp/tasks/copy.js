@@ -6,7 +6,6 @@ gulp.task('copy', function () {
   var staticAssets = gulp.src([
     'src/**/*',
     // Exclude the following:
-    '!src/*.html', // html files are handled by html task
     '!src/{js,js/**}', // scripts are handled by scripts task
     '!src/{img,img/**}', // handled by image task
     '!src/{scss,scss/**}', // handled by styles task

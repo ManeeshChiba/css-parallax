@@ -1,0 +1,7 @@
+@for $i from 1 through 100 {
+    [data-ssparallax="#{$i}"]{
+        $factor: $i * -1;
+        transform: translateY(calc(var(--ssparallax) * #{$factor}px));
+        transition: transform ease 220ms;
+    }
+}

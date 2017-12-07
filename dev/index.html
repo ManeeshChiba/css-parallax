@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Document</title>
+    <link rel="stylesheet" href="/css/ssparallax.css">
+    <style>
+        body {
+            height: 500vh;
+        }
+        .test-block {
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            float: left;
+        }
+        .test-block:nth-child(even){
+            background: rebeccapurple;
+        }
+        .container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="test-block" data-ssparallax="1"></div>
+        <div class="test-block" data-ssparallax="2"></div>
+        <div class="test-block" data-ssparallax="3"></div>
+        <div class="test-block" data-ssparallax="4"></div>
+        <div class="test-block" data-ssparallax="5"></div>
+        <div class="test-block" data-ssparallax="6"></div>
+        <div class="test-block" data-ssparallax="7"></div>
+        <div class="test-block" data-ssparallax="8"></div>
+        <div class="test-block" data-ssparallax="9"></div>
+        <div class="test-block" data-ssparallax="10"></div>
+        <div class="test-block" data-ssparallax="20"></div>
+        <div class="test-block" data-ssparallax="30"></div>
+        <div class="test-block" data-ssparallax="40"></div>
+        <div class="test-block" data-ssparallax="50"></div>
+        <div class="test-block" data-ssparallax="60"></div>
+        <div class="test-block" data-ssparallax="70"></div>
+        <div class="test-block" data-ssparallax="80"></div>
+        <div class="test-block" data-ssparallax="90"></div>
+        <div class="test-block" data-ssparallax="100"></div>
+    </div>
+    <script src="/js/ssparallax.js"></script>
+    <script>
+        window.onload = function(){
+            var parallax = new ssparallax;
+        }
+    </script>
+</body>
+</html>
