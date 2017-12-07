@@ -1,3 +1,3 @@
-#Super Simple Parallax
+# Super Simple Parallax
 
-This aims to a super simple parallax plugin driven by CSS custom properties and transforms.
+A super simple parallax plugin driven by CSS custom properties and transforms.
