@@ -5,6 +5,7 @@ var gulp         = require('gulp'),
     sassLint     = require('gulp-sass-lint'),
     autoprefixer = require('gulp-autoprefixer'),
     gulpif       = require('gulp-if'),
+    rename       = require('gulp-rename'),
     handleErrors = require('../util/handleErrors');
 
 gulp.task('styles', function () {
@@ -19,5 +20,6 @@ gulp.task('styles', function () {
     .pipe(autoprefixer({
         browsers: ['last 2 versions', '> 1%', 'ie 9', 'ie 10']
     }))
+    .pipe(gulpif(global.destination != 'dev', rename({suffix: '.min'})))
     .pipe( gulp.dest(global.destination + '/css'));
 });

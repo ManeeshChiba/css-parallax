@@ -6,11 +6,13 @@ var gulp = require('gulp'),
 	replace = require('gulp-replace'),
 	jshint = require('gulp-jshint'),
 	stylish = require('jshint-stylish'),
+	rename = require('gulp-rename'),
 	handleErrors = require('../util/handleErrors');
 
 gulp.task('scripts', function() {
 	return gulp.src(['src/js/**/*.js'])
 	.pipe(gulpif(global.mode !== 'dev',uglify()))
 	.on('error', handleErrors)
+	.pipe(gulpif(global.destination != 'dev', rename({suffix: '.min'})))
 	.pipe(gulp.dest(global.destination + '/js'));
 });
