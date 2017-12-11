@@ -4,7 +4,7 @@
   "description": "A super simple parallax plugin",
   "main": "readme.md",
   "scripts": {
-    "prestart": "npm intall",
+    "prestart": "npm install",
     "start": "gulp dev"
   },
   "repository": {
